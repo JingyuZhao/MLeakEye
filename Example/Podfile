@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'MLeakEye_Example' do
+  pod 'MLeakEye', :path => '../'
+
+  target 'MLeakEye_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

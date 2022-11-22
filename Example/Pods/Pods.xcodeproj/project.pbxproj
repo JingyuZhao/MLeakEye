@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02E4F3BB971C08DB216BDD09B7CB4A97 /* MLeakPreparer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467980E942B2CECAA49EEDDAB1A45882 /* MLeakPreparer.swift */; };
+		0517F435CB72BF93849D67BD44E17D5F /* DispatchQueue+MLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FBA12048591CD2EBD1A887B83CC509 /* DispatchQueue+MLeakEye.swift */; };
+		2C4FF6F0C98F69EE2CD7AC91AB335432 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		339C44E1338398C02C582671FFA49319 /* MLeakVariable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7528FA2DACE8C6C1BD0BFFE0AA78E9A5 /* MLeakVariable.swift */; };
+		364EB97E0F9A4A0E93CCC7835E78DB59 /* MLeakObjectAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FBFE06E006E6E06E9BD721964029C4 /* MLeakObjectAgent.swift */; };
+		390CD54DB597564A0B74DF0C954C2D7A /* NSObject+Eye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB38FA6A980CE2B57CDADC88323DC08 /* NSObject+Eye.swift */; };
+		3935BE815CFA08C7D14C50416AAAB09B /* Pods-MLeakEye_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A46114DD3C425DE4B5313AEA6EC6FCE0 /* Pods-MLeakEye_Example-dummy.m */; };
+		4F2238914328A71FA923F2622F0B1AD8 /* Pods-MLeakEye_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 572BEF437A5FE43C034AA5CDAA99EFDF /* Pods-MLeakEye_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54F77664CC69B523FCBBCDA6343FE33C /* MLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4347B44F5B79EA99B324C963576874DB /* MLeakEye.swift */; };
+		58084E8A6D7AFE3D87FEFAD44877ED3E /* MLeakEye-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1B455F2A2ABFADC2701E261D62D285 /* MLeakEye-dummy.m */; };
+		6BEA083DC3FCE5724BBBC4D56C924169 /* Pods-MLeakEye_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A608D823E230B6A6AF7EA8F32CF0BA12 /* Pods-MLeakEye_Tests-dummy.m */; };
+		8B4C16FE99BE106616768D3A98738D73 /* String+MLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01E9F355A91009F78DB91EA6F684B8 /* String+MLeakEye.swift */; };
+		B86004B4A9D4E51D876AB3EBC361D315 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C4998BBB1F5991CBFA28AFBCAAA80F42 /* Pods-MLeakEye_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D3D6808E09B1788D1E93D46DA9901DB3 /* Pods-MLeakEye_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D08D147E2A8F20FDE8B0DF916AD9424B /* MLeakEyeSwizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98812E86DAE573BC3904AF06F20D87A /* MLeakEyeSwizzle.swift */; };
+		E3759405D3249558DCA31472F61D3B5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		EBF1408A66F70284EF2B01A25B51BAC1 /* MLeakEye-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 52250C0D37FF4DF92BE66027691F5DE2 /* MLeakEye-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2919A25A670BF6CB8D6585A45778C81 /* NSObject+Alive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A533D45A253861A1887C63B3546A357 /* NSObject+Alive.swift */; };
+		F2D9A55C6690B0F36ABD6F626DAB016F /* NSNotification+MLeakEye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C07DAD67FA35AB48EC3656BDD32FB9 /* NSNotification+MLeakEye.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A0490338070B42DEBCAFE7E5EA07B93B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4298F633E319A1C9CFABC12ABFF6156;
+			remoteInfo = "Pods-MLeakEye_Example";
+		};
+		E25954E761EF5CAA93BEDFD052ACEE3D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE50397245D797AC197B8D059FCBCEE6;
+			remoteInfo = MLeakEye;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14C07DAD67FA35AB48EC3656BDD32FB9 /* NSNotification+MLeakEye.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotification+MLeakEye.swift"; path = "MLeakEye/Classes/NSNotification+MLeakEye.swift"; sourceTree = "<group>"; };
+		1DAB6DABFEBE1A2D02F8C1AB9C41A75E /* Pods-MLeakEye_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MLeakEye_Tests"; path = Pods_MLeakEye_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		232E2A07BF2BABB6E03F858063ADB00B /* Pods-MLeakEye_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLeakEye_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		2E11822CD1F4798448C62743D6558785 /* Pods-MLeakEye_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MLeakEye_Example"; path = Pods_MLeakEye_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FBF5488BEBA21737220A4E56AE6BFF7 /* Pods-MLeakEye_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLeakEye_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		346C271D8E0CE0810D9314D28766CE01 /* Pods-MLeakEye_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLeakEye_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4347B44F5B79EA99B324C963576874DB /* MLeakEye.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MLeakEye.swift; path = MLeakEye/Classes/MLeakEye.swift; sourceTree = "<group>"; };
+		444CABBAC126F1B65D5F162E0A19A42A /* Pods-MLeakEye_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MLeakEye_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		467980E942B2CECAA49EEDDAB1A45882 /* MLeakPreparer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MLeakPreparer.swift; path = MLeakEye/Classes/MLeakPreparer.swift; sourceTree = "<group>"; };
+		52250C0D37FF4DF92BE66027691F5DE2 /* MLeakEye-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLeakEye-umbrella.h"; sourceTree = "<group>"; };
+		53FBA12048591CD2EBD1A887B83CC509 /* DispatchQueue+MLeakEye.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+MLeakEye.swift"; path = "MLeakEye/Classes/DispatchQueue+MLeakEye.swift"; sourceTree = "<group>"; };
+		54D91C52EAFDF5E4BA9ED1A679B294F4 /* Pods-MLeakEye_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MLeakEye_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		572BEF437A5FE43C034AA5CDAA99EFDF /* Pods-MLeakEye_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLeakEye_Tests-umbrella.h"; sourceTree = "<group>"; };
+		574C85CFC9468710D129CE5180BBDA11 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		7039CE418E34113A79BF57A621C08465 /* Pods-MLeakEye_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MLeakEye_Example.modulemap"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		73164E88270131DB7306C5FC371ADF4D /* MLeakEye.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLeakEye.release.xcconfig; sourceTree = "<group>"; };
+		735DD6E7F24E6515B4150F84A328BA82 /* Pods-MLeakEye_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MLeakEye_Tests.modulemap"; sourceTree = "<group>"; };
+		7528FA2DACE8C6C1BD0BFFE0AA78E9A5 /* MLeakVariable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MLeakVariable.swift; path = MLeakEye/Classes/MLeakVariable.swift; sourceTree = "<group>"; };
+		78D8CECCCB58CCE1E8A15987C8A76D9C /* Pods-MLeakEye_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLeakEye_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7FC035446D9BA908B42F685E30060D68 /* MLeakEye-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MLeakEye-Info.plist"; sourceTree = "<group>"; };
+		8EB38FA6A980CE2B57CDADC88323DC08 /* NSObject+Eye.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Eye.swift"; path = "MLeakEye/Classes/NSObject+Eye.swift"; sourceTree = "<group>"; };
+		9716154E5C985014484D2ED35DD225B7 /* MLeakEye.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MLeakEye.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A533D45A253861A1887C63B3546A357 /* NSObject+Alive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Alive.swift"; path = "MLeakEye/Classes/NSObject+Alive.swift"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A46114DD3C425DE4B5313AEA6EC6FCE0 /* Pods-MLeakEye_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MLeakEye_Example-dummy.m"; sourceTree = "<group>"; };
+		A608D823E230B6A6AF7EA8F32CF0BA12 /* Pods-MLeakEye_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MLeakEye_Tests-dummy.m"; sourceTree = "<group>"; };
+		A98812E86DAE573BC3904AF06F20D87A /* MLeakEyeSwizzle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MLeakEyeSwizzle.swift; path = MLeakEye/Classes/MLeakEyeSwizzle.swift; sourceTree = "<group>"; };
+		AA8558400DB74BA77613BFEE8BAB62DF /* Pods-MLeakEye_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLeakEye_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		AC1B455F2A2ABFADC2701E261D62D285 /* MLeakEye-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MLeakEye-dummy.m"; sourceTree = "<group>"; };
+		AD87456C099713E0F8172F97F46F2FAB /* Pods-MLeakEye_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MLeakEye_Example.release.xcconfig"; sourceTree = "<group>"; };
+		B209BC3CD8766788AA6437E08615B7C9 /* MLeakEye */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MLeakEye; path = MLeakEye.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF01E9F355A91009F78DB91EA6F684B8 /* String+MLeakEye.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+MLeakEye.swift"; path = "MLeakEye/Classes/String+MLeakEye.swift"; sourceTree = "<group>"; };
+		C0EA1F743F70F32455C28273BF0CB6AC /* Pods-MLeakEye_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MLeakEye_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CAAD10AB76A9FAC1FBFADF01406B08AF /* Pods-MLeakEye_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLeakEye_Example-Info.plist"; sourceTree = "<group>"; };
+		D3D6808E09B1788D1E93D46DA9901DB3 /* Pods-MLeakEye_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MLeakEye_Example-umbrella.h"; sourceTree = "<group>"; };
+		E26AB04131A6CAC10B7C78670D8792FE /* MLeakEye.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MLeakEye.debug.xcconfig; sourceTree = "<group>"; };
+		E81E4959514A39D98A3CAD5E830A76A3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		EB1713E3B997FE9A8056CA8215F701A1 /* MLeakEye-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MLeakEye-prefix.pch"; sourceTree = "<group>"; };
+		EC42C188C378CDFEA41F46D452200980 /* MLeakEye.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MLeakEye.modulemap; sourceTree = "<group>"; };
+		F2FBFE06E006E6E06E9BD721964029C4 /* MLeakObjectAgent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MLeakObjectAgent.swift; path = MLeakEye/Classes/MLeakObjectAgent.swift; sourceTree = "<group>"; };
+		F3DE9C74D4B09E377D146A6821F6F962 /* Pods-MLeakEye_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MLeakEye_Tests-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		140A2BF88D2A6FE32812398C0D4D9829 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B86004B4A9D4E51D876AB3EBC361D315 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30DFABE9C0F7D8EBF3907BB4A528C561 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3759405D3249558DCA31472F61D3B5F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2EA22204C08B9BF9D002440F5F1FEE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C4FF6F0C98F69EE2CD7AC91AB335432 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		223075EEC0915FB1CA3270761E3D0C83 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				574C85CFC9468710D129CE5180BBDA11 /* LICENSE */,
+				9716154E5C985014484D2ED35DD225B7 /* MLeakEye.podspec */,
+				E81E4959514A39D98A3CAD5E830A76A3 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		32B691A17323EF0902D2485E0646F781 /* MLeakEye */ = {
+			isa = PBXGroup;
+			children = (
+				53FBA12048591CD2EBD1A887B83CC509 /* DispatchQueue+MLeakEye.swift */,
+				4347B44F5B79EA99B324C963576874DB /* MLeakEye.swift */,
+				A98812E86DAE573BC3904AF06F20D87A /* MLeakEyeSwizzle.swift */,
+				F2FBFE06E006E6E06E9BD721964029C4 /* MLeakObjectAgent.swift */,
+				467980E942B2CECAA49EEDDAB1A45882 /* MLeakPreparer.swift */,
+				7528FA2DACE8C6C1BD0BFFE0AA78E9A5 /* MLeakVariable.swift */,
+				14C07DAD67FA35AB48EC3656BDD32FB9 /* NSNotification+MLeakEye.swift */,
+				9A533D45A253861A1887C63B3546A357 /* NSObject+Alive.swift */,
+				8EB38FA6A980CE2B57CDADC88323DC08 /* NSObject+Eye.swift */,
+				BF01E9F355A91009F78DB91EA6F684B8 /* String+MLeakEye.swift */,
+				223075EEC0915FB1CA3270761E3D0C83 /* Pod */,
+				EFE2CD1CD9DA1624A6BC75549A99613E /* Support Files */,
+			);
+			name = MLeakEye;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		48FE32F846D7BFCBC364295539768C46 /* Pods-MLeakEye_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				735DD6E7F24E6515B4150F84A328BA82 /* Pods-MLeakEye_Tests.modulemap */,
+				444CABBAC126F1B65D5F162E0A19A42A /* Pods-MLeakEye_Tests-acknowledgements.markdown */,
+				78D8CECCCB58CCE1E8A15987C8A76D9C /* Pods-MLeakEye_Tests-acknowledgements.plist */,
+				A608D823E230B6A6AF7EA8F32CF0BA12 /* Pods-MLeakEye_Tests-dummy.m */,
+				F3DE9C74D4B09E377D146A6821F6F962 /* Pods-MLeakEye_Tests-Info.plist */,
+				572BEF437A5FE43C034AA5CDAA99EFDF /* Pods-MLeakEye_Tests-umbrella.h */,
+				2FBF5488BEBA21737220A4E56AE6BFF7 /* Pods-MLeakEye_Tests.debug.xcconfig */,
+				AA8558400DB74BA77613BFEE8BAB62DF /* Pods-MLeakEye_Tests.release.xcconfig */,
+			);
+			name = "Pods-MLeakEye_Tests";
+			path = "Target Support Files/Pods-MLeakEye_Tests";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8B0BC716122C90BF826D4572F7FBC48D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D3349337C9C4143BDEB9BE4A37585103 /* Pods-MLeakEye_Example */,
+				48FE32F846D7BFCBC364295539768C46 /* Pods-MLeakEye_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B41463D214127F8E7E40416F5F6DFECA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32B691A17323EF0902D2485E0646F781 /* MLeakEye */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		B65F7B2CB39D09D22B05FF535D26EF22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B209BC3CD8766788AA6437E08615B7C9 /* MLeakEye */,
+				2E11822CD1F4798448C62743D6558785 /* Pods-MLeakEye_Example */,
+				1DAB6DABFEBE1A2D02F8C1AB9C41A75E /* Pods-MLeakEye_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				B41463D214127F8E7E40416F5F6DFECA /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				B65F7B2CB39D09D22B05FF535D26EF22 /* Products */,
+				8B0BC716122C90BF826D4572F7FBC48D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3349337C9C4143BDEB9BE4A37585103 /* Pods-MLeakEye_Example */ = {
+			isa = PBXGroup;
+			children = (
+				7039CE418E34113A79BF57A621C08465 /* Pods-MLeakEye_Example.modulemap */,
+				54D91C52EAFDF5E4BA9ED1A679B294F4 /* Pods-MLeakEye_Example-acknowledgements.markdown */,
+				232E2A07BF2BABB6E03F858063ADB00B /* Pods-MLeakEye_Example-acknowledgements.plist */,
+				A46114DD3C425DE4B5313AEA6EC6FCE0 /* Pods-MLeakEye_Example-dummy.m */,
+				C0EA1F743F70F32455C28273BF0CB6AC /* Pods-MLeakEye_Example-frameworks.sh */,
+				CAAD10AB76A9FAC1FBFADF01406B08AF /* Pods-MLeakEye_Example-Info.plist */,
+				D3D6808E09B1788D1E93D46DA9901DB3 /* Pods-MLeakEye_Example-umbrella.h */,
+				346C271D8E0CE0810D9314D28766CE01 /* Pods-MLeakEye_Example.debug.xcconfig */,
+				AD87456C099713E0F8172F97F46F2FAB /* Pods-MLeakEye_Example.release.xcconfig */,
+			);
+			name = "Pods-MLeakEye_Example";
+			path = "Target Support Files/Pods-MLeakEye_Example";
+			sourceTree = "<group>";
+		};
+		EFE2CD1CD9DA1624A6BC75549A99613E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC42C188C378CDFEA41F46D452200980 /* MLeakEye.modulemap */,
+				AC1B455F2A2ABFADC2701E261D62D285 /* MLeakEye-dummy.m */,
+				7FC035446D9BA908B42F685E30060D68 /* MLeakEye-Info.plist */,
+				EB1713E3B997FE9A8056CA8215F701A1 /* MLeakEye-prefix.pch */,
+				52250C0D37FF4DF92BE66027691F5DE2 /* MLeakEye-umbrella.h */,
+				E26AB04131A6CAC10B7C78670D8792FE /* MLeakEye.debug.xcconfig */,
+				73164E88270131DB7306C5FC371ADF4D /* MLeakEye.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MLeakEye";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5A5AC1968B8F40A5BCA9D4B7709010C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4998BBB1F5991CBFA28AFBCAAA80F42 /* Pods-MLeakEye_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94B168361E6CC03964D84882BC291204 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBF1408A66F70284EF2B01A25B51BAC1 /* MLeakEye-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C628ED622F6A8BB81A7CE961B5640700 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F2238914328A71FA923F2622F0B1AD8 /* Pods-MLeakEye_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		A341C7680C17F34B7DE6AB93C56663FC /* Pods-MLeakEye_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3EF732FF04C991B4894E7EFE4CE212E /* Build configuration list for PBXNativeTarget "Pods-MLeakEye_Tests" */;
+			buildPhases = (
+				C628ED622F6A8BB81A7CE961B5640700 /* Headers */,
+				4A4A34A6183B5B1ACFC14E5C912079FF /* Sources */,
+				30DFABE9C0F7D8EBF3907BB4A528C561 /* Frameworks */,
+				C5379D83BF4A13C0B2ACC5CAAE9C6DE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A331B6500E0D7B7EE662378CD7E6C28 /* PBXTargetDependency */,
+			);
+			name = "Pods-MLeakEye_Tests";
+			productName = Pods_MLeakEye_Tests;
+			productReference = 1DAB6DABFEBE1A2D02F8C1AB9C41A75E /* Pods-MLeakEye_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE50397245D797AC197B8D059FCBCEE6 /* MLeakEye */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E11DACF21C11BDDC1C91B7A982448F92 /* Build configuration list for PBXNativeTarget "MLeakEye" */;
+			buildPhases = (
+				94B168361E6CC03964D84882BC291204 /* Headers */,
+				F59F954F370D42B973D2A68A0CF1058E /* Sources */,
+				140A2BF88D2A6FE32812398C0D4D9829 /* Frameworks */,
+				58998FD0BA79DBAE8F8821F9AB71800F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLeakEye;
+			productName = MLeakEye;
+			productReference = B209BC3CD8766788AA6437E08615B7C9 /* MLeakEye */;
+			productType = "com.apple.product-type.framework";
+		};
+		E4298F633E319A1C9CFABC12ABFF6156 /* Pods-MLeakEye_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 507F3A7B881C0BED31144EBD7DDAD6FE /* Build configuration list for PBXNativeTarget "Pods-MLeakEye_Example" */;
+			buildPhases = (
+				5A5AC1968B8F40A5BCA9D4B7709010C2 /* Headers */,
+				E60F47B082E4A1F1E4930B26514ECED6 /* Sources */,
+				B2EA22204C08B9BF9D002440F5F1FEE0 /* Frameworks */,
+				D1659D2599C51C24C8EB5E2087D470F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				29A70711758CABE6118AB7ECFADCFD01 /* PBXTargetDependency */,
+			);
+			name = "Pods-MLeakEye_Example";
+			productName = Pods_MLeakEye_Example;
+			productReference = 2E11822CD1F4798448C62743D6558785 /* Pods-MLeakEye_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B65F7B2CB39D09D22B05FF535D26EF22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE50397245D797AC197B8D059FCBCEE6 /* MLeakEye */,
+				E4298F633E319A1C9CFABC12ABFF6156 /* Pods-MLeakEye_Example */,
+				A341C7680C17F34B7DE6AB93C56663FC /* Pods-MLeakEye_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58998FD0BA79DBAE8F8821F9AB71800F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5379D83BF4A13C0B2ACC5CAAE9C6DE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1659D2599C51C24C8EB5E2087D470F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4A4A34A6183B5B1ACFC14E5C912079FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BEA083DC3FCE5724BBBC4D56C924169 /* Pods-MLeakEye_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60F47B082E4A1F1E4930B26514ECED6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3935BE815CFA08C7D14C50416AAAB09B /* Pods-MLeakEye_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59F954F370D42B973D2A68A0CF1058E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0517F435CB72BF93849D67BD44E17D5F /* DispatchQueue+MLeakEye.swift in Sources */,
+				54F77664CC69B523FCBBCDA6343FE33C /* MLeakEye.swift in Sources */,
+				58084E8A6D7AFE3D87FEFAD44877ED3E /* MLeakEye-dummy.m in Sources */,
+				D08D147E2A8F20FDE8B0DF916AD9424B /* MLeakEyeSwizzle.swift in Sources */,
+				364EB97E0F9A4A0E93CCC7835E78DB59 /* MLeakObjectAgent.swift in Sources */,
+				02E4F3BB971C08DB216BDD09B7CB4A97 /* MLeakPreparer.swift in Sources */,
+				339C44E1338398C02C582671FFA49319 /* MLeakVariable.swift in Sources */,
+				F2D9A55C6690B0F36ABD6F626DAB016F /* NSNotification+MLeakEye.swift in Sources */,
+				F2919A25A670BF6CB8D6585A45778C81 /* NSObject+Alive.swift in Sources */,
+				390CD54DB597564A0B74DF0C954C2D7A /* NSObject+Eye.swift in Sources */,
+				8B4C16FE99BE106616768D3A98738D73 /* String+MLeakEye.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		29A70711758CABE6118AB7ECFADCFD01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MLeakEye;
+			target = CE50397245D797AC197B8D059FCBCEE6 /* MLeakEye */;
+			targetProxy = E25954E761EF5CAA93BEDFD052ACEE3D /* PBXContainerItemProxy */;
+		};
+		9A331B6500E0D7B7EE662378CD7E6C28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-MLeakEye_Example";
+			target = E4298F633E319A1C9CFABC12ABFF6156 /* Pods-MLeakEye_Example */;
+			targetProxy = A0490338070B42DEBCAFE7E5EA07B93B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0466BD3CCAC92EDF0188AAE392709072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73164E88270131DB7306C5FC371ADF4D /* MLeakEye.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MLeakEye/MLeakEye-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MLeakEye/MLeakEye-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MLeakEye/MLeakEye.modulemap";
+				PRODUCT_MODULE_NAME = MLeakEye;
+				PRODUCT_NAME = MLeakEye;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		05B72685F7E377DBA6D8C31F656D577B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FBF5488BEBA21737220A4E56AE6BFF7 /* Pods-MLeakEye_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLeakEye_Tests/Pods-MLeakEye_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLeakEye_Tests/Pods-MLeakEye_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		09AC465142AE6247F94EE0379A5EE10C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8558400DB74BA77613BFEE8BAB62DF /* Pods-MLeakEye_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLeakEye_Tests/Pods-MLeakEye_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLeakEye_Tests/Pods-MLeakEye_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		75C91E32CC5E4171573CF5070709CE45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 346C271D8E0CE0810D9314D28766CE01 /* Pods-MLeakEye_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLeakEye_Example/Pods-MLeakEye_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLeakEye_Example/Pods-MLeakEye_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9D198A6F28ECD1BF29DBC73F387A68A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD87456C099713E0F8172F97F46F2FAB /* Pods-MLeakEye_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MLeakEye_Example/Pods-MLeakEye_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MLeakEye_Example/Pods-MLeakEye_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FACAD4E91E8479871A4D4D23AB1CA384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E26AB04131A6CAC10B7C78670D8792FE /* MLeakEye.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/MLeakEye/MLeakEye-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MLeakEye/MLeakEye-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MLeakEye/MLeakEye.modulemap";
+				PRODUCT_MODULE_NAME = MLeakEye;
+				PRODUCT_NAME = MLeakEye;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		507F3A7B881C0BED31144EBD7DDAD6FE /* Build configuration list for PBXNativeTarget "Pods-MLeakEye_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75C91E32CC5E4171573CF5070709CE45 /* Debug */,
+				9D198A6F28ECD1BF29DBC73F387A68A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E11DACF21C11BDDC1C91B7A982448F92 /* Build configuration list for PBXNativeTarget "MLeakEye" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FACAD4E91E8479871A4D4D23AB1CA384 /* Debug */,
+				0466BD3CCAC92EDF0188AAE392709072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3EF732FF04C991B4894E7EFE4CE212E /* Build configuration list for PBXNativeTarget "Pods-MLeakEye_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05B72685F7E377DBA6D8C31F656D577B /* Debug */,
+				09AC465142AE6247F94EE0379A5EE10C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

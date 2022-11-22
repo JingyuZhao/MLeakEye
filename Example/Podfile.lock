@@ -1,0 +1,16 @@
+PODS:
+  - MLeakEye (0.1.0)
+
+DEPENDENCIES:
+  - MLeakEye (from `../`)
+
+EXTERNAL SOURCES:
+  MLeakEye:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MLeakEye: db329ce4785fbcf1a9370bf94abfe9e307c91713
+
+PODFILE CHECKSUM: ff81103cd059af7e1332fb2e729fce2173572fb6
+
+COCOAPODS: 1.11.2

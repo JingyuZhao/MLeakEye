@@ -1,0 +1,6 @@
+framework module MLeakEye {
+  umbrella header "MLeakEye-umbrella.h"
+
+  export *
+  module * { export * }
+}
