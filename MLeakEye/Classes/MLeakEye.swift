@@ -28,6 +28,9 @@ import Foundation
     /// 用于扫描的定时器
     private var timer: Timer?
 
+    /// 忽略列表信息
+    public var ignoreList: [String]?
+    
     /// 判断检查内存泄漏工具是否开启
     public var isOpening: Bool {
         get {
@@ -83,6 +86,7 @@ extension MLeakEye {
 
     @objc private func receive(notif: NSNotification) {
         guard let leakObj = notif.object as? NSObject else { return }
+        guard !self.checkIgnore(obj: leakObj) else { return }
         self.delegate?.leakEye?(self, didCatchLeak: leakObj)
         let message = "发现可疑内存泄漏对象\(leakObj)"
         if useAlert {
@@ -93,4 +97,21 @@ extension MLeakEye {
             debugPrint(message)
         }
     }
+    
+    private func checkIgnore(obj: NSObject) -> Bool {
+        
+        let vc = NSStringFromClass(obj.classForCoder)
+        guard vc.count > 0 else { return false }
+        
+        var ignore = false
+        ignoreList?.forEach({ info in
+            if (vc.range(of: info) != nil) {
+                ignore = true
+            }
+        })
+
+        return ignore
+    }
+    
 }
+
