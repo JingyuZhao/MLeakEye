@@ -7,19 +7,18 @@
 //
 
 import UIKit
-#if DEBUG
+//#if DEBUG
 import MLeakEye
-#endif
+//#endif
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        #if DEBUG
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+//        #if DEBUG
         MLeakEye.shared.open()
-        #endif
+//        #endif
         return true
     }
 
