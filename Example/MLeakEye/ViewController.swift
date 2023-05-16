@@ -29,8 +29,7 @@ class ViewController: UIViewController {
         btn2.addTarget(self, action: #selector(diss), for: .touchUpInside)
         view.addSubview(btn2)
         
-        subV = subView(frame: CGRectMake(20, 300, 200, 50))
-        subV.backgroundColor = UIColor.green
+        subV = subView(frame: CGRectMake(20, 300, 0, 0))
         view.addSubview(subV)
         
         leak()
